@@ -19,7 +19,7 @@ h4,
 h5,
 h6 {
   font-family: 'Saira Extra Condensed', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--headingTextColor);
 }
 
@@ -39,7 +39,7 @@ h2 {
 
 .subheading {
   /*text-transform: uppercase;*/
-  font-weight: bold;
+  font-weight: 400;
   font-family: 'Saira Extra Condensed', sans-serif;
   font-size: 1.35rem;
 }
