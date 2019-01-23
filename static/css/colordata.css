@@ -3,6 +3,8 @@
   --bodyTextColor: #868e96;
   --borderColor: #dee2e6;
   --socialIconColor: #495057;
+  --sidenavTextColor: rgba(255,255,255, 0.7);
+  --sidenavTextColorFocused: rgba(255,255,0, 0.7);
   
   --mainAccentColor: #BD5D38;
   --mainAccentColorFocused: #824027;
