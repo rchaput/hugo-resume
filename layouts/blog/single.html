@@ -5,8 +5,18 @@
     <h2 class="mb-0"><span class="text-primary">{{ .Title }}</span></h2>
     <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
     {{ .Content }}
-    {{ with .Params.link }}<p>Project link: <a href="{{ . }}">{{ . }}</a></p>{{ end }}
     {{ partial "techtags" . }}
   </div>
+  <div class = "sidenav-right">
+	<h6>Recent Posts</h6>
+	<h6>Archive</h6>
+	{{range .Pages}}
+	  <li>
+	  	<a href="{{.Permalink}}">{{.Title}} | {{.Date.Format "2006-01-02"}}</a>
+	  </li>
+	{{ end }}
+  </div>
 </section>
+
+<link href="{{ "css/blog.css" | absURL }}"    rel="stylesheet">
 {{ end }}
