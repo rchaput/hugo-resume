@@ -1,0 +1,50 @@
+[about]
+other = "About"
+
+[skills]
+other = "Skills"
+
+[projects]
+other = "Projects"
+
+[contributions]
+other = "Open Source"
+
+[publications]
+other = "Publications"
+
+[education]
+other = "Education"
+
+[experience]
+other = "Experience"
+
+[blog]
+other = "Blog"
+
+[wait-title]
+other = "Wait! There's more.."
+
+[wait-desc]
+other = "See all"
+
+[read-more]
+other = "Read more.."
+
+[teaching]
+other = "Teaching"
+
+[matching-pages]
+other = "Matching pages"
+
+[tags]
+other = "Tags:"
+
+[categories]
+other = "Categories:"
+
+[qr]
+other = "Scan contact card"
+
+[link-to-full]
+other = "Link to full"

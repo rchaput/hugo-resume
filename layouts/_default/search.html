@@ -6,11 +6,11 @@
 {{ define "main" }}
 <section class="resume-section p-3 p-lg-5 d-flex flex-column">
   <div class="my-auto" >
-    <form action="{{ .Permalink }}">
+    <form action="{{ .RelPermalink }}">
       <input id="search-query" name="s"/>
     </form>
     <div id="search-results">
-     <h3>Matching pages</h3>
+     <h3>{{ i18n "matching-pages" }}</h3>
     </div>
   </div>
 </section>
@@ -18,8 +18,8 @@
     <div id="summary-${key}">
       <h4><a href="${link}">${title}</a></h4>
       <p>${snippet}</p>
-      ${ isset tags }<p>Tags: ${tags}</p>${ end }
-      ${ isset categories }<p>Categories: ${categories}</p>${ end }
+      ${ isset tags }<p>{{ i18n "tags" }} ${tags}</p>${ end }
+      ${ isset categories }<p>{{ i18n "categories" }} ${categories}</p>${ end }
     </div>
 </script>
 {{ end }}

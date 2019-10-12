@@ -1,0 +1,50 @@
+[about]
+other = "À propos"
+
+[skills]
+other = "Compétences"
+
+[projects]
+other = "Projets"
+
+[contributions]
+other = "Contributions"
+
+[publications]
+other = "Publications"
+
+[education]
+other = "Éducation"
+
+[experience]
+other = "Expérience"
+
+[blog]
+other = "Blog"
+
+[wait-title]
+other = "Il y en a plus..."
+
+[wait-desc]
+other = "Voir tout"
+
+[read-more]
+other = "Lire plus..."
+
+[teaching]
+other = "Enseignements"
+
+[matching-pages]
+other = "Pages correspondantes"
+
+[tags]
+other = "Mots-clés :"
+
+[categories]
+other = "Catégories :"
+
+[qr]
+other = "Scanner la carte de contact"
+
+[link-to-full]
+other = "Lien vers"

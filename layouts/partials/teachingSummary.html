@@ -2,11 +2,9 @@
 <div class="resume-item d-flex flex-column flex-md-row mb-5">
   <div class="publication-content mr-auto">
     <h3 class="mb-0"><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
-    <div>{{ .Summary | safeHTML }}</div>
-    <p>{{ partial "techtags" . }}</p>
+    <div>{{ .Params.description | safeHTML }}</div>
   </div>
   <div class="resume-date text-md-right">
-    <span class="text-primary">{{ .Date.Format "January 2, 2006" }}</span>
-    <img src="{{ .Params.image }}" style="max-width:250px;padding:5px;"/>
+    <span class="text-primary">{{ .Params.year }}</span>
   </div>
 </div>

@@ -1,5 +1,23 @@
 # hugo Resume
 
+This is a fork I made from [eddiewebb/hugo-resume](https://github.com/eddiewebb/hugo-resume). 
+I added the PR from [aashishvasu](https://github.com/aashishvasu/hugo-resume) (which adds support for color
+configuration in `colordata.css`), and added a (small) support for multilingual websites. I also added a "Teaching"
+section.
+
+## How to configure colors
+
+Copy `<root>/themes/hugo-resume/static/css/colordata.css` to `<root>/static/css/colordata.css` and edit it.
+
+## How to add a new language
+
+Copy `<root>/themes/hugo-resume/i18n/en.toml` to a new file, matching the key of the desired language, e.g.
+`<root>/i18n/es.toml` and replace the translations strings in this file.
+Note: I couldn't translate the `data/` folder, in which the `education.json`, `experience.json`, and `skills.json`
+reside. 
+
+-- Original Readme hereafter 
+
 Created from [Start Bootstrap - Resume](https://startbootstrap.com/template-overviews/resume/).
 
 This is basically a single-page website with auto-scrolling based on left-hand nav.  Dedicated project/publications pages allow more detail.  Includes a client-side search powered by fuse.js at '/search' but currently theme does not link to that anywhere.

@@ -1,6 +1,6 @@
 <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="{{ .Scratch.Get "sectionId" }}">
   <div class="my-auto" id="projects-content">
-    <h2 class="mb-5"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <h2 class="mb-5"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <p>{{ .Content }}</p>
     {{ $featuredPages := where .Pages "Params.featured" true }}
     {{ range $featuredPages }}
@@ -9,8 +9,8 @@
   </div>
   {{ if gt .Pages $featuredPages }}
     <div class="my-auto">
-      <h3>Wait! There's more..</h3>
-      <p>See <a href="{{ .Permalink }}">all {{ .Title | pluralize }}</a> for more examples!</p>
+      <h3>{{ i18n "wait-title" }}</h3>
+      <p><a href="{{ .RelPermalink }}">{{ i18n "wait-desc" }}</a></p>
     </div>
   {{ end }}
 </section>

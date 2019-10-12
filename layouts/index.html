@@ -3,6 +3,12 @@
    {{ if .Site.Params.showSkills }}
        {{ partial "portfolio/skills.html" . }}
    {{ end }}
+   {{ if .Site.Params.showTeaching }}
+      {{ with .Site.GetPage "section" "teaching" }}
+         {{ .Scratch.Set "sectionId" "teaching" }}
+         {{ partial "sectionSummary" . }}
+      {{ end }}
+   {{ end }}
    {{ if .Site.Params.showProjects }}
       {{ with .Site.GetPage "section" "projects/creations" }}
          {{ .Scratch.Set "sectionId" "projects" }}

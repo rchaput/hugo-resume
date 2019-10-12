@@ -12,7 +12,7 @@
 	<h6>Archive</h6>
 	{{range .Pages}}
 	  <li>
-	  	<a href="{{.Permalink}}">{{.Title}} | {{.Date.Format "2006-01-02"}}</a>
+	  	<a href="{{.RelPermalink}}">{{.Title}} | {{.Date.Format "2006-01-02"}}</a>
 	  </li>
 	{{ end }}
   </div>

@@ -9,6 +9,8 @@
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta property="og:description" content="{{ .Site.Params.description }}" />
   <meta name="author" content="{{ .Site.Params.firstName }} {{ .Site.Params.lastName }}">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon }}">
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template -->
@@ -22,7 +24,7 @@
   <link href="{{ .Site.Params.color | absURL }}" rel="stylesheet">
   <link href="{{ "css/resume.css" | absURL }}"    rel="stylesheet">
   <link href="{{ "css/tweaks.css" | absURL }}"    rel="stylesheet">
-  {{ .Hugo.Generator }}
+  {{ hugo.Generator }}
   {{ block "headfiles" . }}
    <!-- pl;aceholder -->
   {{ end }}
@@ -34,8 +36,13 @@
       {{ .Content }}
     {{ end }}
 
-    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
-    {{ with $.GitInfo }}{{ with $.Site.Params.gitCommitPrefix }} | <span style="color: #999999; font-size: 60%;">Page content generated from commit: <a href="{{ . }}/{{ $.GitInfo.AbbreviatedHash }}" title="log: {{ $.GitInfo.Subject }}">{{ $.GitInfo.AbbreviatedHash }}</a>{{ end }}{{end}}
+<!--    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>-->
+    {{ with $.GitInfo }}
+      {{ with $.Site.Params.gitCommitPrefix }}
+        | <span style="color: #999999; font-size: 60%;">Page content generated from commit:
+        <a href="{{ . }}/{{ $.GitInfo.AbbreviatedHash }}" title="log: {{ $.GitInfo.Subject }}">{{ $.GitInfo.AbbreviatedHash }}</a>
+      {{ end }}
+    {{end}}
   </div>
   <!-- Bootstrap core JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
